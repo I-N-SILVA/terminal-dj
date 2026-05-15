@@ -1,0 +1,6 @@
+[general]
+music_directory = "~/Music"
+
+[visualizer]
+mode = "bars"
+fps = 60

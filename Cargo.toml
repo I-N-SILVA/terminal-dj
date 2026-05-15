@@ -1,0 +1,45 @@
+[package]
+name = "terminal-dj"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# TUI
+ratatui = "0.29.0"
+crossterm = "0.28.1"
+tui-logger = { version = "0.11.1", features = ["tracing-support"] }
+log = "0.4"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing = "0.1"
+
+# Audio
+rodio = "0.19"
+rustfft = "6.1"
+ringbuf = "0.3"
+
+# Networking & API
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "stream"] }
+serde = { version = "1.0", features = ["derive"] }
+rspotify = { version = "0.13", features = ["cli", "client-reqwest"] }
+webbrowser = "0.8"
+tiny_http = "0.12"
+serde_json = "1.0"
+dotenvy = "0.15"
+futures = "0.3"
+lyric_finder = "0.1"
+
+# Metadata & Processing
+cpal = "0.15"
+lofty = "0.21"
+rusqlite = { version = "0.32", features = ["bundled"] }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+
+# System & Misc
+dirs = "5.0"
+anyhow = "1.0"
+md5 = "0.7"
+discord-rich-presence = "0.2"
+biquad = "0.4"
+souvlaki = "0.7"
+percent-encoding = "2.3"

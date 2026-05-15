@@ -1,0 +1,3 @@
+Received code: AQBXaqWKVTeccAMuM4t0aiX_anCGm7DhUm_gG7qI1AczIjJ7Bik8r-orAX3aektUbm8ILZ4I6GltjoegeFj3lkOJhW-V5KJsEQej4Q2CU1AFfkPw7iJWwlum-oifKK9h-2gmx3ttmyVIjYWvfqB-KNeHM8qdiVVOBV2nDuiPIp4lVtC08B5JS4a9egMT0tK0qG3g6iPBcroYZw98ZII7ynm8yKybk8vlcWh5ZRogfJDKmr0fDXnbbQjHpjLXIvh7FgGtDArH-tLF034nUrns5Edl2Pvot0tlQNQ1G9-2k9hDqhnt_hCNndZhf0gIWvYnxdfn1_mKZPPxf4zJKBDCw2pjCtiPKYwooqhHos05U4HQKnF-rI8PGJ62hq_6CUoEGxF_GVQuxU6r1WCeoKx1gq-9hZmG7ba2b_S_v-ly1E6BrCTBr7IkEj6o0xgLEvU
+2026-04-12T11:26:05.988717Z  WARN terminal_dj::spotify: Skipping malformed playlist entry: json parse error: missing field `tracks` at line 1 column 1032
+2026-04-12T11:26:20.126673Z  WARN terminal_dj::spotify: Skipping malformed playlist entry: json parse error: missing field `tracks` at line 1 column 1032
