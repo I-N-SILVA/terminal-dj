@@ -15,8 +15,8 @@ pub struct EventHandler {
 impl EventHandler {
     pub fn new(tick_rate: Duration) -> Self {
         let (sender, receiver) = mpsc::unbounded_channel();
-        
-        tokio::spawn(async move {
+
+        std::thread::spawn(move || {
             let mut last_tick = Instant::now();
             loop {
                 let timeout = tick_rate
@@ -26,7 +26,9 @@ impl EventHandler {
                 if event::poll(timeout).expect("failed to poll events") {
                     if let CrosstermEvent::Key(key) = event::read().expect("failed to read event") {
                         if key.kind == event::KeyEventKind::Press {
-                            sender.send(Event::Key(key)).expect("failed to send key event");
+                            sender
+                                .send(Event::Key(key))
+                                .expect("failed to send key event");
                         }
                     }
                 }

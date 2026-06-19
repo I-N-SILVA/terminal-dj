@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 # TUI
-ratatui = "0.29.0"
+ratatui = "0.30.1"
 crossterm = "0.28.1"
 tui-logger = { version = "0.11.1", features = ["tracing-support"] }
 log = "0.4"
@@ -27,7 +27,7 @@ tiny_http = "0.12"
 serde_json = "1.0"
 dotenvy = "0.15"
 futures = "0.3"
-lyric_finder = "0.1"
+
 
 # Metadata & Processing
 cpal = "0.15"
@@ -43,3 +43,5 @@ discord-rich-presence = "0.2"
 biquad = "0.4"
 souvlaki = "0.7"
 percent-encoding = "2.3"
+rand = "0.10.1"
+ratatui-image = { version = "11.0.4", default-features = false, features = ["crossterm"] }

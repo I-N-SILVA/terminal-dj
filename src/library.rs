@@ -1,6 +1,6 @@
+use crate::metadata::TrackMeta;
 use std::collections::HashMap;
 use std::path::PathBuf;
-use crate::metadata::TrackMeta;
 
 pub struct Library {
     pub tracks: Vec<PathBuf>,
@@ -21,5 +21,4 @@ impl Library {
 
     // If a synchronous scan is ever needed again, reintroduce a dedicated
     // function here that uses spawn_blocking and streams results back.
-
 }
